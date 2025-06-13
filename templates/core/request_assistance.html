@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block extra_css %}
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/other.css' %}">
+{% endblock %}
+<div class="container">
+  <h2>Request Assistance</h2>
+  <form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+  </div>
+{% endblock %}

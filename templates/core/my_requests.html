@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block extra_css %}
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/other.css' %}">
+{% endblock %}
+<div class="container">
+  <h2>My Requests</h2>
+  <ul>
+    {% for req in requests %}
+      <li>{{ req.location }} - {{ req.status }} - {{ req.created_at }}</li>
+    {% endfor %}
+  </ul>
+  </div>
+{% endblock %}

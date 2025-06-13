@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  color: #1a73e8;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0f5fc2;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+li {
+  padding: 12px;
+  background-color: #f1f5f9;
+  margin-bottom: 10px;
+  border-left: 6px solid #1a73e8;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  button[type="submit"] {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
